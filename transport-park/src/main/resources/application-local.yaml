@@ -1,0 +1,17 @@
+spring:
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/admin?ApplicationName=delivery-company
+    password: admin
+    username: admin
+  flyway:
+    url: ${spring.datasource.url}
+    user: ${spring.datasource.username}
+    password: ${spring.datasource.password}
+logging:
+  level:
+    org.hibernate.type.descriptor.sql: trace
