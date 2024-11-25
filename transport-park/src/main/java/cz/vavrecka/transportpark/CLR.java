@@ -23,9 +23,9 @@ public class CLR {
 
 
 
-//            Depo depo = Depo.builder().name("test" + UUID.randomUUID()).build();
-//
-//            depoRepostiory.save(depo);
+            Depo depo = Depo.builder().name("test" + UUID.randomUUID()).build();
+
+            depoRepostiory.save(depo);
 //
 //
 //            Vehicle vehicle = Vehicle.builder().name("aaaa" + UUID.randomUUID()).depo(depo).build();
